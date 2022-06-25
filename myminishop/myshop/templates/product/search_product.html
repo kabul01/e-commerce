@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<div id="main" class="product-list">
+
+ {% for product in post%}
+<div class="item">
+<a href="{{ product.get_absolute_url }}">
+    <img src="{% if product.image %}
+    {{ product.image.url }}
+    {% endif %}">
+</a>
+<a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
+<br>
+${{ product.price }}
+</div>
+{% endfor %}
+</div>
+</body>
+</html>
+{% endblock %}

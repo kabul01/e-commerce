@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Номер телефона </label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Адрес</label>
+    <input type="text" class="form-control" id="inputAddress2">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Город</label>
+    <input type="text" class="form-control" id="inputCity">
+
+
+  </div>
+  <div class="col-12">
+    <a class="btn btn-primary btn-lg" href="{% url 'myshop:product_list' %}" role="button">Отправить</a>
+  </div>
+</form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
